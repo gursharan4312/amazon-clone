@@ -1,0 +1,179 @@
+.header {
+  width: 100%;
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  .header_logo {
+    width: 120px;
+    margin: 18px 18px 0 18px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-flex;
+    .header_logo_img {
+      width: 97px;
+      display: inline-block;
+    }
+  }
+
+  .header_search {
+    display: flex;
+    flex: 1;
+    height: 40px;
+    align-items: center;
+    .header_searchInput {
+      height: 100%;
+      padding: 7px 10px 10px 0;
+      border: none;
+      width: 100%;
+      text-indent: 8px;
+      font-size: 15px;
+      line-height: 15px;
+      border-radius: 3px 0 0 3px;
+      &:focus {
+        box-shadow: 0 0 0 2px #f90, 0 0 0 3px rgba(225, 153, 0, 0.5);
+        outline: none;
+        & + .header_searchIconContainer {
+          box-shadow: 0 0 0 2px #f90, 0 0 0 3px rgba(225, 153, 0, 0.5);
+        }
+      }
+    }
+    .header_searchIconContainer {
+      background-color: #febd69;
+      cursor: pointer;
+      height: 100%;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 3px 3px 0;
+      &:hover {
+        background-color: #f90;
+        & .header_searchIcon {
+          background-color: #f90;
+        }
+      }
+      .header_searchIcon {
+        background-color: #febd69;
+      }
+    }
+  }
+  .header_accountInfo,
+  .header_orders,
+  .header_prime,
+  .header_cart {
+    color: #fff;
+    margin: 0 5px;
+    padding: 0 8px;
+    height: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border: 1px solid #131921;
+    border-radius: 2px;
+    cursor: pointer;
+    & > span {
+      font-size: 12px;
+    }
+    &:hover {
+      border-color: #fff;
+    }
+    .header_acccountInfo_subHeading {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 15px;
+    }
+  }
+
+  .header_cart {
+    padding: 0 10px;
+    flex-direction: row;
+    align-items: flex-end;
+    .header_cart_count {
+      color: #febd69;
+      font-weight: 700;
+      font-size: 14px;
+      position: absolute;
+      top: 20%;
+      left: 43%;
+    }
+    .header_acccountInfo_subHeading {
+      margin-bottom: 5px;
+    }
+    .header_icon_cart {
+      width: 48px;
+      height: 48px;
+      position: relative;
+      overflow: hidden;
+      .cart-line-1 {
+        width: 18%;
+        height: 7%;
+        position: absolute;
+        left: 0%;
+        top: 25%;
+        background-color: #000;
+      }
+      .cart-line-2 {
+        width: 40%;
+        height: 7.2%;
+        position: absolute;
+        left: 6%;
+        top: 42%;
+        -webkit-transform: rotate(60deg);
+        -moz-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+        transform: rotate(60deg);
+        background-color: #000;
+        &:before {
+          content: "";
+          width: 92%;
+          height: 100%;
+          position: absolute;
+          left: 71%;
+          top: -190%;
+          -webkit-transform: rotate(-60deg);
+          -moz-transform: rotate(-60deg);
+          -ms-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+          background-color: inherit;
+        }
+        &:after {
+          content: "";
+          width: 70%;
+          height: 100%;
+          position: absolute;
+          left: 90%;
+          top: -508%;
+          background-color: inherit;
+          -webkit-transform: rotate(60deg);
+          -moz-transform: rotate(60deg);
+          -ms-transform: rotate(60deg);
+          transform: rotate(60deg);
+        }
+      }
+      .cart-wheel {
+        width: 11%;
+        height: 11%;
+        background-color: #000;
+        border-radius: 50%;
+        position: absolute;
+        left: 35%;
+        bottom: 18%;
+        &:after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: inherit;
+          border-radius: 50%;
+          position: absolute;
+          left: 250%;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
