@@ -1,5 +1,7 @@
 .deals {
   background-color: #fff;
+  margin: 1rem 0;
+
   .deals_header {
     padding: 1rem;
     .deals_header_heading {
@@ -21,13 +23,14 @@
         background-color: #fff;
         padding: 1rem 0.5rem;
         border-radius: 0 3px 3px 0;
-        opacity: 0.5;
+        opacity: 0;
         height: 100px;
         width: 45px;
         display: flex;
         justify-content: center;
         align-items: center;
         box-shadow: 0px 1px 3px #888;
+        transition: all 0.5s ease-in-out;
         &:hover {
           cursor: pointer;
           opacity: 0.9;
@@ -39,6 +42,38 @@
       display: flex;
       overflow-x: scroll;
       grid-area: 1 / 1;
+
+      &:hover {
+        &::-webkit-scrollbar-thumb {
+          background-color: #aaa;
+        }
+        & + .deals_product_arrows .deals_product_arrow {
+          opacity: 0.5;
+        }
+      }
+
+      &::-webkit-scrollbar {
+        background: #fff;
+        height: 20px;
+      }
+      &::-webkit-scrollbar-button {
+        width: 0;
+        height: 0;
+        display: none;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #fff;
+        border-radius: 15px;
+        height: 6px;
+        border: 7px solid rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          background-color: #888888;
+        }
+      }
+
       .deals_product {
         cursor: pointer;
         display: inline-flex;

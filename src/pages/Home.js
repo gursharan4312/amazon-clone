@@ -20,6 +20,21 @@ export default function Home() {
           <CategoryCard />
         </div>
         <Deals />
+        <Deals />
+        <div className="categories_container">
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+        </div>
+        <Deals />
+        <Deals />
+        <div className="categories_container">
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+          <CategoryCard />
+        </div>
       </div>
     </div>
   );

@@ -17,6 +17,7 @@ export default function Deals() {
     h = 0.4 * h;
     productsContainer.current.scrollLeft -= h;
   };
+
   return (
     <div className="deals">
       <div className="deals_header">
