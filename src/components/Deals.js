@@ -32,6 +32,7 @@ export default function Deals() {
             <img
               src="/images/products/product1.jpg"
               className="deals_product_img"
+              alt="deal"
             />
             <span className="deals_product_price">$20</span>
           </div>
@@ -39,6 +40,7 @@ export default function Deals() {
             <img
               src="/images/products/product1.jpg"
               className="deals_product_img"
+              alt="deal"
             />
             <span className="deals_product_price">$20</span>
           </div>
@@ -46,6 +48,7 @@ export default function Deals() {
             <img
               src="/images/products/product1.jpg"
               className="deals_product_img"
+              alt="deal"
             />
             <span className="deals_product_price">$20</span>
           </div>
@@ -53,6 +56,7 @@ export default function Deals() {
             <img
               src="/images/products/product1.jpg"
               className="deals_product_img"
+              alt="deal"
             />
             <span className="deals_product_price">$20</span>
           </div>
@@ -60,6 +64,7 @@ export default function Deals() {
             <img
               src="/images/products/product1.jpg"
               className="deals_product_img"
+              alt="deal"
             />
             <span className="deals_product_price">$20</span>
           </div>
@@ -67,6 +72,7 @@ export default function Deals() {
             <img
               src="/images/products/product1.jpg"
               className="deals_product_img"
+              alt="deal"
             />
             <span className="deals_product_price">$20</span>
           </div>
@@ -74,6 +80,7 @@ export default function Deals() {
             <img
               src="/images/products/product1.jpg"
               className="deals_product_img"
+              alt="deal"
             />
             <span className="deals_product_price">$20</span>
           </div>
@@ -81,6 +88,7 @@ export default function Deals() {
             <img
               src="/images/products/product1.jpg"
               className="deals_product_img"
+              alt="deal"
             />
             <span className="deals_product_price">$20</span>
           </div>
@@ -88,6 +96,7 @@ export default function Deals() {
             <img
               src="/images/products/product1.jpg"
               className="deals_product_img"
+              alt="deal"
             />
             <span className="deals_product_price">$20</span>
           </div>
@@ -95,6 +104,7 @@ export default function Deals() {
             <img
               src="/images/products/product1.jpg"
               className="deals_product_img"
+              alt="deal"
             />
             <span className="deals_product_price">$20</span>
           </div>
@@ -102,6 +112,7 @@ export default function Deals() {
             <img
               src="/images/products/product1.jpg"
               className="deals_product_img"
+              alt="deal"
             />
             <span className="deals_product_price">$20</span>
           </div>
@@ -109,6 +120,7 @@ export default function Deals() {
             <img
               src="/images/products/product1.jpg"
               className="deals_product_img"
+              alt="deal"
             />
             <span className="deals_product_price">$20</span>
           </div>

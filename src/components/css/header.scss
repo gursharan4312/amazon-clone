@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  min-width: 1500px;
   background-color: #131921;
   display: flex;
   align-items: center;
@@ -7,7 +8,6 @@
   height: 60px;
   position: sticky;
   top: 0;
-  z-index: 100;
   .header_logo {
     width: 120px;
     margin: 18px 18px 0 18px;
@@ -25,6 +25,7 @@
     flex: 1;
     height: 40px;
     align-items: center;
+    z-index: 1000;
     .header_searchInput {
       height: 100%;
       padding: 7px 10px 10px 0;
@@ -174,6 +175,71 @@
           bottom: 0;
         }
       }
+    }
+  }
+}
+
+// Header main
+
+.header-main {
+  min-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  color: #fff;
+  background-color: #232f3e;
+  padding-left: 0.5em;
+  position: sticky;
+  top: 60px;
+  .header-main_address {
+    display: flex;
+    align-items: center;
+    margin: 2px 0 2px 5px;
+    border: 1px solid #232f3e;
+    &:hover {
+      cursor: pointer;
+      border-color: #fff;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-main_address_hello {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    .hero-main_address_address {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 15px;
+      padding: 2px 4px 2px 0;
+    }
+  }
+  ul {
+    flex: 1;
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: flex-start;
+    li {
+      margin: 5px 1px 6px 0;
+      padding: 8px 9px 8px 9px;
+      font-size: 14px;
+      border: 1px solid #232f3e;
+      &:hover {
+        cursor: pointer;
+        border-color: #fff;
+      }
+    }
+  }
+
+  .header-main_electronic_guide {
+    padding: 4px 60px;
+    border: 1px solid #232f3e;
+    font-size: 20px;
+    &:hover {
+      cursor: pointer;
+      border-color: #fff;
     }
   }
 }
