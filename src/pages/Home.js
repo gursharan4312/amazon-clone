@@ -6,7 +6,7 @@ import "./css/home.scss";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="home_container">
       <HeroSection />
       <div className="home_content">
         <div className="categories_container">

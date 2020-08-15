@@ -3,9 +3,15 @@ import "./css/footer.scss";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
   return (
     <footer className="footer">
-      <button className="footer_backTop">Back to top</button>
+      <button className="footer_backTop" onClick={scrollToTop}>
+        Back to top
+      </button>
       <div className="foooter_main_links">
         <div className="footer_main_section">
           <h5>Get to Know Us</h5>
