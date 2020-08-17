@@ -1,0 +1,75 @@
+%filter_heading_styles {
+  display: block;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 1.255;
+  color: #767676;
+}
+
+%link_styles {
+  font-size: 12px;
+  line-height: 1.5;
+  &:hover {
+    color: #c45500;
+    cursor: pointer;
+  }
+}
+
+.filter_sidebar {
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  .filter_heading {
+    @extend %filter_heading_styles;
+    margin: 0.5rem 1rem;
+  }
+  .filter_type {
+    font-size: 12px;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+    .filter_type_heading {
+      font-weight: 700;
+      margin: 0.1em 1rem;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 1.5rem;
+      li {
+        @extend %link_styles;
+      }
+    }
+  }
+  .filter_rest {
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+    margin: 0 1rem;
+    .filter_rest_heading {
+      @extend %filter_heading_styles;
+    }
+    .filter_rest_section {
+      margin: 0.5rem 0;
+      .heading {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+      .filter_form {
+        color: #111;
+        & > * {
+          margin: 5px 0;
+        }
+        input {
+          margin-right: 4px;
+        }
+        .form_section {
+          display: flex;
+          align-items: center;
+          & > label,
+          & > span {
+            @extend %link_styles;
+          }
+        }
+      }
+    }
+  }
+}
