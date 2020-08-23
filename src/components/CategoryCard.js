@@ -14,7 +14,7 @@ export default function CategoryCard() {
           alt="category"
           className="category_card_img"
         />
-        <Link to="/products" className="category_card_link">
+        <Link to="/products/#top" className="category_card_link">
           See more
         </Link>
       </div>

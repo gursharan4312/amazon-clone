@@ -4,7 +4,7 @@ import StarHalfIcon from "@material-ui/icons/StarHalf";
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
 import "./css/productsCard.scss";
 
-export default function ProductCard() {
+export default function ProductCard({ togggleModal }) {
   return (
     <div className="product_card">
       <div className="product_img">
@@ -13,7 +13,7 @@ export default function ProductCard() {
           className="product_img"
           alt="product"
         />
-        <button>Quick Look</button>
+        <button onClick={togggleModal}>Quick Look</button>
       </div>
       <div className="product_price">
         <span>$14</span>
