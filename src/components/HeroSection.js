@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./css/heroSection.scss";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 export default function HeroSection() {
-  const [images, setImages] = useState([
-    "/images/hero1.jpg",
-    "/images/hero2.jpg",
-    "/images/hero3.jpg",
-  ]);
+  const [images, setImages] = useState([]);
   const [selectedImg, setSelectedImg] = useState(0);
 
   const nextImg = () => {
@@ -20,7 +16,9 @@ export default function HeroSection() {
     i = i < 0 ? images.length - 1 : i;
     setSelectedImg(i);
   };
-
+  useEffect(() => {
+    setImages(["/images/hero1.jpg", "/images/hero2.jpg", "/images/hero3.jpg"]);
+  }, []);
   return (
     <div className="hero">
       <img
